@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LSO Energy Advisors</title>
+  <link rel="stylesheet" href="style.css">
+<style> 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #008080;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1DA891;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #3E3E63;
+  color: #FFFDD0;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+header p {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Navigation Styles */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  font-size: 24px;
+}
+
+nav a:hover {
+  color: #FFFDD0;
+}
+
+/* Hero Section Styles */
+
+#hero {
+  background-image: url('https://images.unsplash.com/photo-1589794909087-aefdbd2f2d43?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZW5yb3NzbGF2ZSUyMHBpY3R1cmVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 64px;
+  margin: 0;
+  color: #F7F7BC;
+  text-shadow: 2px 2px #3E3E63;
+}
+
+/* About Section Styles */
+
+#about {
+  background-color: #F7F7BC;
+  padding: 40px;
+}
+
+#about h2 {
+  margin-top: 0;
+  font-size: 48px;
+}
+
+#about p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Types of Work Section Styles */
+
+#types-of-work {
+  background-color: #008080;
+  color: #FFFDD0;
+  padding: 40px;
+}
+
+#types-of-work h2 {
+  margin-top: 0;
+  font-size: 48px;
+}
+
+#types-of-work p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+#types-of-work ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#types-of-work li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Clients Section Styles */
+
+#clients {
+  background-color: #1DA891;
+  color: #FFFDD0;
+  padding: 40px;
+}
+
+#clients h2 {
+  margin-top: 0;
+  font-size: 48px;
+}
+
+#clients p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+#clients ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#clients li {
+  font-size: 24px;
+  margin-bottom
+}
+
+
+.clients-container {
+  padding: 50px 0;
+  background-color: #FFFDD0;
+}
+
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.client img {
+  width: 200px;
+  height: auto;
+  margin: 0 30px;
+}
+
+.client-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #3E3E63;
+  transition: all 0.2s ease-in-out;
+}
+
+.client-link:hover {
+  color: #008080;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials-container {
+  padding: 50px 0;
+  background-color: #F7F7BC;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #3E3E63;
+}
+
+.testimonial h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+/* CONTACT SECTION */
+
+.contact-container {
+  padding: 50px 0;
+  background-color: #1DA891;
+  color: #FFF;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFF;
+  color: #3E3E63;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #3E3E63;
+  opacity: 0.7;
+}
+
+.contact-form button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3E3E63;
+  color: #FFF;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #008080;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 0 20px;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Logo section */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+}
+
+/* Banner section */
+.banner {
+  background-image: url('your-image-url-here');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: 2px 2px #3E3E63;
+}
+
+.banner p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-shadow: 2px 2px #3E3E63;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="https://placehold.it/150x50" alt="LSO Energy Advisors Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#types-of-work">Types of Work</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="banner" style="background-image: url('https://placehold.it/1200x600');">
+		<div class="container">
+			<h1>Expert legal guidance on electric, natural gas and renewable energy matters.</h1>
+		</div>
+	</section>
+
+    <section id="about">
+      <div class="container">
+        <h1>About LSO Energy Advisors</h1>
+        <p>LSO Energy Advisors provides expert legal guidance on electric, natural gas and renewable energy matters. We are dedicated to helping our clients navigate the complex and constantly evolving landscape of energy law. Our experienced attorneys have a deep understanding of the energy industry and the regulatory frameworks that govern it.</p>
+        <p>At LSO Energy Advisors, we pride ourselves on our ability to provide clear, concise and practical advice. We work closely with our clients to understand their unique needs and goals, and we strive to provide tailored solutions that meet those needs.</p>
+      </div>
+    </section>
+
+    <section id="types-of-work">
+      <div class="container">
+        <h2>Types of Work</h2>
+        <ul>
+          <li>Climate focused</li>
+          <li>Sustainability</li>
+          <li>Carbon reduction</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container">
+        <h2>Clients</h2>
+        <ul>
+          <li><a href="http://www.brightfieldsinc.com/">Brightfields Development, LLC</a></li>
+          <li><a href="https://www.eaglebrook.org/">Eaglebrook School</a></li>
+          <li><a href="https://www.lockelord.com/">Locke Lord LLP</a></li>
+          <li><a href="https://www.mclane.com/">McLane Middleton</a></li>
+          <li><a href="https://www.mass.gov/orgs/merrimac-municipal-light-department">Merrimac Municipal Light Department</a></li>
+          <li><a href="https://www.poweroptions.org/">PowerOptions</a></li>
+          <li><a href="https://www.springfieldjcc.org/">Springfield JCC</a></li>
+          <li><a href="https://www.tbeonline.org/">Temple Beth Elohim, Wellesley (pro bono)</a></li>
+          <li><a href="https://www.terraformglobal.com/">TerraForm Global</a></li>
+          <li><a href="https://www.umassmed.edu/">University of Massachusetts Medical School</a></li>
+          <li><a href="https://www.wm.com/">Waste Management of Massachusetts, Inc.</a></li>
+          <li><a href="https://www.wellesleyma.gov/wellesley-municipal-light-plant">Wellesley Municipal Light
+        </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="testimonial">
+            <p>"I cannot recommend LSO Energy Advisors enough. Laura's expertise in the energy field is unparalleled and her guidance has been invaluable."</p>
+            <cite>- John Smith, CEO of Brightfields Development, LLC</cite>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="testimonial">
+            <p>"LSO Energy Advisors has been an incredible asset to our organization. Their legal guidance has helped us make informed decisions on our energy usage."</p>
+            <cite>- Jane Doe, Head of School at Eaglebrook School</cite>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="testimonial">
+            <p>"Laura and her team have been invaluable in navigating complex energy regulations. Their expertise and guidance have been instrumental in our company's success."</p>
+            <cite>- Bob Johnson, General Counsel at McLane Middleton</cite>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="testimonial">
+            <p>"We've been working with LSO Energy Advisors for years and they have consistently provided top-notch legal guidance on all our energy matters. Highly recommend!"</p>
+            <cite>- Sarah Jones, Director at Waste Management of Massachusetts, Inc.</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For more information or to schedule a consultation, please fill out the form below or contact us directly:</p>
+    <ul>
+      <li>Email: laura@LSOEnergyAdvisors.com</li>
+      <li>Phone: 781-856-9374</li>
+    </ul>
+    <form action="submit-form.php" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>  
+  </main>
+  </body>
+</html>
+    
+
