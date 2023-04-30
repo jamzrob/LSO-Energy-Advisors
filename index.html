@@ -30,7 +30,7 @@ a:hover {
 /* Header Styles */
 
 header {
-  background-color: #3E3E63;
+  background-color: white;
   color: #FFFDD0;
   padding: 20px;
 }
@@ -73,7 +73,7 @@ nav a:hover {
 /* Hero Section Styles */
 
 #hero {
-  background-image: url('https://images.unsplash.com/photo-1589794909087-aefdbd2f2d43?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZW5yb3NzbGF2ZSUyMHBpY3R1cmVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+  background-image: url('./bg.png');
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -152,6 +152,7 @@ nav a:hover {
 #clients p {
   font-size: 24px;
   line-height: 1.5;
+  color:white;
 }
 
 #clients ul {
@@ -163,12 +164,14 @@ nav a:hover {
 #clients li {
   font-size: 24px;
   margin-bottom
+  text:white;
 }
 
 
 .clients-container {
   padding: 50px 0;
   background-color: #FFFDD0;
+  text: white;
 }
 
 .client {
@@ -188,117 +191,135 @@ nav a:hover {
 .client-link {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #3E3E63;
+  color: white;
   transition: all 0.2s ease-in-out;
 }
 
 .client-link:hover {
+  color:white;
   color: #008080;
 }
 
 /* TESTIMONIALS SECTION */
-
 .testimonials-container {
-  padding: 50px 0;
-  background-color: #F7F7BC;
+      padding: 50px 0;
+        background-color: #F7F7BC;
+}
+
+.testimonials {
+      display: flex;
+        justify-content: space-between;
+          align-items: center;
+            overflow-x: auto;
+              white-space: nowrap;
+                border: 1px solid #ccc;
+                  padding: 10px;
+                    margin-top: 30px;
 }
 
 .testimonial {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 40px;
+      display: inline-block;
+        text-align: center;
+          margin: 0 10px;
 }
 
 .testimonial img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+      width: 80px;
+        height: 80px;
+          border-radius: 50%;
+            margin-bottom: 20px;
 }
 
 .testimonial p {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin-bottom: 20px;
-  color: #3E3E63;
+      font-size: 1.2rem;
+        font-style: italic;
+          margin-bottom: 20px;
+            color: #3E3E63;
 }
 
 .testimonial h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #008080;
+      font-size: 1.5rem;
+        margin-bottom: 10px;
+          color: #008080;
 }
+
 
 /* CONTACT SECTION */
-
-.contact-container {
-  padding: 50px 0;
-  background-color: #1DA891;
-  color: #FFF;
+#contact {
+      background-color: #f2f2f2;
+        padding: 50px;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
+#contact h2 {
+      font-size: 2.5rem;
+        margin-bottom: 20px;
+          color: #008080;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #FFF;
-  color: #3E3E63;
+#contact p {
+      font-size: 1.2rem;
+        margin-bottom: 20px;
+          color: #3E3E63;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #3E3E63;
-  opacity: 0.7;
+#contact ul {
+      list-style: none;
+        margin-bottom: 30px;
+          padding-left: 0;
 }
 
-.contact-form button {
-  width: 150px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #3E3E63;
-  color: #FFF;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+#contact ul li {
+      font-size: 1.2rem;
+        margin-bottom: 10px;
+          color: #3E3E63;
 }
 
-.contact-form button:hover {
-  background-color: #008080;
+#contact form {
+      display: flex;
+        flex-direction: column;
+          align-items: center;
 }
 
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+#contact form div {
+      display: flex;
+        flex-direction: column;
+          align-items: flex-start;
+            margin-bottom: 20px;
+              width: 100%;
 }
 
-.contact-info p {
-  font-size: 1.2rem;
-  margin: 0 20px;
+#contact form label {
+      font-size: 1.2rem;
+        margin-bottom: 10px;
+          color: #3E3E63;
 }
 
-.contact-info i {
-  font-size: 1.5rem;
-  margin-right: 10px;
+#contact form input,
+#contact form textarea {
+      width: 100%;
+        padding: 10px;
+          border: 1px solid #ccc;
+            border-radius: 4px;
+              font-size: 1.2rem;
+                color: #3E3E63;
 }
 
-/* Logo section */
+#contact form button[type="submit"] {
+      background-color: #008080;
+        color: #fff;
+          border: none;
+            border-radius: 4px;
+              padding: 10px 20px;
+                font-size: 1.2rem;
+                  cursor: pointer;
+}
+
+#contact form button[type="submit"]:hover {
+      background-color: #006666;
+}
+
+
+/* LOGO SECTION */
 .logo {
   display: flex;
   justify-content: center;
@@ -312,30 +333,23 @@ nav a:hover {
 }
 
 /* Banner section */
-.banner {
-  background-image: url('your-image-url-here');
+#banner {
+  background-image: url('./bg.png');
   background-size: cover;
   background-position: center;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 500px;
+}
+
+#banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 300px;
+  margin-left: 100px;
   color: white;
-  text-align: center;
 }
 
-.banner h1 {
-  font-size: 36px;
-  font-weight: 700;
-  text-shadow: 2px 2px #3E3E63;
-}
 
-.banner p {
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 20px;
-  text-shadow: 2px 2px #3E3E63;
-}
 
 /* ANIMATION */
 
@@ -351,12 +365,53 @@ nav a:hover {
 .fade-in {
   animation: fadeIn 1s ease-in-out;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
 </style>
 </head>
 <body>
   <header>
     <div class="logo">
-        <img src="https://placehold.it/150x50" alt="LSO Energy Advisors Logo">
+        <img src="./LSO-LOGO.png" alt="LSO Energy Advisors Logo">
     </div>
     <nav>
       <ul>
@@ -370,7 +425,7 @@ nav a:hover {
   </header>
 
   <main>
-    <section id="banner" style="background-image: url('https://placehold.it/1200x600');">
+    <section id="banner" style="background-image: url('./bg.png');">
 		<div class="container">
 			<h1>Expert legal guidance on electric, natural gas and renewable energy matters.</h1>
 		</div>
