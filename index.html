@@ -4,536 +4,402 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LSO Energy Advisors</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/dfc927cb23.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Boostrap --> 
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous">
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
-<style> 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
-a {
-  color: #008080;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #1DA891;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header Styles */
-
-header {
-  background-color: white;
-  color: #FFFDD0;
-  padding: 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 48px;
-}
-
-header p {
-  margin: 0;
-  font-size: 24px;
-}
-
-/* Navigation Styles */
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav li:last-child {
-  margin-right: 0;
-}
-
-nav a {
-  font-size: 24px;
-}
-
-nav a:hover {
-  color: #FFFDD0;
-}
-
-/* Hero Section Styles */
-
-#hero {
-  background-image: url('./bg.png');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#hero h2 {
-  font-size: 64px;
-  margin: 0;
-  color: #F7F7BC;
-  text-shadow: 2px 2px #3E3E63;
-}
-
-/* About Section Styles */
-
-#about {
-  background-color: #F7F7BC;
-  padding: 40px;
-}
-
-#about h2 {
-  margin-top: 0;
-  font-size: 48px;
-}
-
-#about p {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-/* Types of Work Section Styles */
-
-#types-of-work {
-  background-color: #008080;
-  color: #FFFDD0;
-  padding: 40px;
-}
-
-#types-of-work h2 {
-  margin-top: 0;
-  font-size: 48px;
-}
-
-#types-of-work p {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-#types-of-work ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#types-of-work li {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-/* Clients Section Styles */
-
-#clients {
-  background-color: #1DA891;
-  color: #FFFDD0;
-  padding: 40px;
-}
-
-#clients h2 {
-  margin-top: 0;
-  font-size: 48px;
-}
-
-#clients p {
-  font-size: 24px;
-  line-height: 1.5;
-  color:white;
-}
-
-#clients ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#clients li {
-  font-size: 24px;
-  margin-bottom
-  text:white;
-}
-
-
-.clients-container {
-  padding: 50px 0;
-  background-color: #FFFDD0;
-  text: white;
-}
-
-.client {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.client img {
-  width: 200px;
-  height: auto;
-  margin: 0 30px;
-}
-
-.client-link {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: white;
-  transition: all 0.2s ease-in-out;
-}
-
-.client-link:hover {
-  color:white;
-  color: #008080;
-}
-
-/* TESTIMONIALS SECTION */
-.testimonials-container {
-      padding: 50px 0;
-        background-color: #F7F7BC;
-}
-
-.testimonials {
-      display: flex;
-        justify-content: space-between;
-          align-items: center;
-            overflow-x: auto;
-              white-space: nowrap;
-                border: 1px solid #ccc;
-                  padding: 10px;
-                    margin-top: 30px;
-}
-
-.testimonial {
-      display: inline-block;
-        text-align: center;
-          margin: 0 10px;
-}
-
-.testimonial img {
-      width: 80px;
-        height: 80px;
-          border-radius: 50%;
-            margin-bottom: 20px;
-}
-
-.testimonial p {
-      font-size: 1.2rem;
-        font-style: italic;
-          margin-bottom: 20px;
-            color: #3E3E63;
-}
-
-.testimonial h3 {
-      font-size: 1.5rem;
-        margin-bottom: 10px;
-          color: #008080;
-}
-
-
-/* CONTACT SECTION */
-#contact {
-      background-color: #f2f2f2;
-        padding: 50px;
-}
-
-#contact h2 {
-      font-size: 2.5rem;
-        margin-bottom: 20px;
-          color: #008080;
-}
-
-#contact p {
-      font-size: 1.2rem;
-        margin-bottom: 20px;
-          color: #3E3E63;
-}
-
-#contact ul {
-      list-style: none;
-        margin-bottom: 30px;
-          padding-left: 0;
-}
-
-#contact ul li {
-      font-size: 1.2rem;
-        margin-bottom: 10px;
-          color: #3E3E63;
-}
-
-#contact form {
-      display: flex;
-        flex-direction: column;
-          align-items: center;
-}
-
-#contact form div {
-      display: flex;
-        flex-direction: column;
-          align-items: flex-start;
-            margin-bottom: 20px;
-              width: 100%;
-}
-
-#contact form label {
-      font-size: 1.2rem;
-        margin-bottom: 10px;
-          color: #3E3E63;
-}
-
-#contact form input,
-#contact form textarea {
-      width: 100%;
-        padding: 10px;
-          border: 1px solid #ccc;
-            border-radius: 4px;
-              font-size: 1.2rem;
-                color: #3E3E63;
-}
-
-#contact form button[type="submit"] {
-      background-color: #008080;
-        color: #fff;
-          border: none;
-            border-radius: 4px;
-              padding: 10px 20px;
-                font-size: 1.2rem;
-                  cursor: pointer;
-}
-
-#contact form button[type="submit"]:hover {
-      background-color: #006666;
-}
-
-
-/* LOGO SECTION */
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.logo img {
-  height: 80px;
-  width: 80px;
-}
-
-/* Banner section */
-#banner {
-  background-image: url('./bg.png');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
-
-#banner h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: right;
-  margin-top: 300px;
-  margin-left: 100px;
-  color: white;
-}
-
-
-
-/* ANIMATION */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-.logo {
-  height: 70px;
-  margin-right: 10px;
-}
-
-.logo img {
-  height: 100%;
-  width: auto;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-
-</style>
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
+<!-- Include Swiper JS -->
   <header>
-    <div class="logo">
+    <div class="nav-logo">
         <img src="./LSO-LOGO.png" alt="LSO Energy Advisors Logo">
     </div>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
         <li><a href="#types-of-work">Types of Work</a></li>
         <li><a href="#clients">Clients</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <li><a href="#footer">Contact</a></li>
+      </ul> </nav> 
+  </header> 
+    <main> 
+        <section id="banner" > 
+            <div class="mission">
+                <h1>Expert legal guidance  on electric, natural gas, and renewable energy matters.</h1>
+            </div>
+        </section>
+        <section id="about" > 
+                  <p>LSO Energy Advisors combines industry knowledge, regulatory expertiseand commitment to highest quality work to deliver thoughtful and effective representation to consumer and environmental organizations, utilities, renewable energy companies, municipalities and others navigating the energy sector in New England.</p>
+        </section>
 
-  <main>
-    <section id="banner" style="background-image: url('./bg.png');">
-		<div class="container">
-			<h1>Expert legal guidance on electric, natural gas and renewable energy matters.</h1>
-		</div>
-	</section>
+        <section id="types-of-work">
+          <div class="container">
+            <h2>Types of Work</h2>
+            <hr class="white">
+            <ul>
+                <li id="energy-work" class="type">
+                    <div class="types-of-work-logo">
+                        <i class="fa-solid fa-solar-panel fa-2xl"></i>
+                    </div>
+                    <h3>Energy Agreements</h3>
+                </li>
+              <li id="reg-work" class="type">
+                    <div class="types-of-work-logo">
+                        <i class="fa-solid fa-gavel fa-2xl"></i>
+                    </div>
+                    <h3>Regulatory</h3>
+              </li>
+              <li id="strat-work" class="type">
+                    <div class="types-of-work-logo">
+                        <i class="fa-solid fa-file-contract fa-2xl"></i>
+                    </div>
+                    <h3>Strategy and Negotiation</h3>
+              </li>
+              <li id="climate-work" class="type">
+                    <div class="types-of-work-logo">
+                        <i class="fa-solid fa-sun-plant-wilt fa-2xl"></i>
+                    </div>
+                    <h3>Climate</h3>
+              </li>
+            </ul>
+            <div class="type-of-work-info">
+                <p id="type-of-work-info-text"></p>
+            </div>
+          </div>
+        </section>
 
-    <section id="about">
+      <!-- Testimonials section -->
+      <section id="testimonials" class="section">
       <div class="container">
-        <h1>About LSO Energy Advisors</h1>
-        <p>LSO Energy Advisors provides expert legal guidance on electric, natural gas and renewable energy matters. We are dedicated to helping our clients navigate the complex and constantly evolving landscape of energy law. Our experienced attorneys have a deep understanding of the energy industry and the regulatory frameworks that govern it.</p>
-        <p>At LSO Energy Advisors, we pride ourselves on our ability to provide clear, concise and practical advice. We work closely with our clients to understand their unique needs and goals, and we strive to provide tailored solutions that meet those needs.</p>
+          <h2 class="section-title">Testimonials</h2>
+            <hr class="green">
+          <div class="swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                          <p>"I have worked with Laura for several years, as a colleague, as opposing counsel, and as a lawyer appearing before the DPU when she was the general counsel. In all instances, she has been professional, knowledgeable, highly skilled, and exceptionally pleasant to work with. I recommend Laura and LSO Energy Advisors highly."</p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Amy Rabinowitz</h3>
+                          <span>Former Vice President and Deputy General Counsel, National Grid</span>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                          <p>"As the Director of the Wellesley Municipal Light Plant (“WMLP”) I had the good fortune to work with Laura Olton of LSO Energy Advisors on a number of different projects. LSO Energy Advisors provided the WMLP with excellent legal and business advice on projects ranging from complicated purchase power agreements to all facets of energy conservation and renewable energy initiatives. In all my experiences with Laura, she was knowledgeable, professional and courteous; the WMLP was more than satisfied with the final outcome of any, and all, projects in which LSO Energy Advisors was involved."</p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Dick Joyce</h3>
+                          <span>Former Director, Wellesley Municipal Light Plant</span>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                          <p>"Laura is a key member of the PowerOptions team, providing strong legal support for our electricity, natural gas and solar program contracts. She has a keen legal mind, solid business sense and has been very effective in negotiating with counsel for our suppliers. Laura is thorough in her analysis and provides thoughtful, clear advice which I rely on with confidence."</p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Cynthia Arcate</h3>
+                          <span>Retired President & CEO, PowerOptions, Inc.</span>
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                          <p>"I have worked with Laura for several years, as a colleague, as opposing counsel, and as a lawyer appearing before the DPU when she was the general counsel. In all instances, she has been professional, knowledgeable, highly skilled, and exceptionally pleasant to work with. I recommend Laura and LSO Energy Advisors highly."</p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Amy Rabinowitz</h3>
+                          <span>Former Vice President and Deputy General Counsel, National Grid</span>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                          <p>"As the Director of the Wellesley Municipal Light Plant (“WMLP”) I had the good fortune to work with Laura Olton of LSO Energy Advisors on a number of different projects. LSO Energy Advisors provided the WMLP with excellent legal and business advice on projects ranging from complicated purchase power agreements to all facets of energy conservation and renewable energy initiatives. In all my experiences with Laura, she was knowledgeable, professional and courteous; the WMLP was more than satisfied with the final outcome of any, and all, projects in which LSO Energy Advisors was involved."</p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Dick Joyce</h3>
+                          <span>Former Director, Wellesley Municipal Light Plant</span>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                          <p>"Laura is a key member of the PowerOptions team, providing strong legal support for our electricity, natural gas and solar program contracts. She has a keen legal mind, solid business sense and has been very effective in negotiating with counsel for our suppliers. Laura is thorough in her analysis and provides thoughtful, clear advice which I rely on with confidence."</p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Cynthia Arcate</h3>
+                          <span>Retired President & CEO, PowerOptions, Inc.</span>
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
       </div>
     </section>
 
-    <section id="types-of-work">
-      <div class="container">
-        <h2>Types of Work</h2>
-        <ul>
-          <li>Climate focused</li>
-          <li>Sustainability</li>
-          <li>Carbon reduction</li>
-        </ul>
-      </div>
-    </section>
+        <section id="clients">
+          <div class="container">
+            <h2>Representative Clients</h2>
+            <hr class="blue">
 
-    <section id="clients">
-      <div class="container">
-        <h2>Clients</h2>
-        <ul>
-          <li><a href="http://www.brightfieldsinc.com/">Brightfields Development, LLC</a></li>
-          <li><a href="https://www.eaglebrook.org/">Eaglebrook School</a></li>
-          <li><a href="https://www.lockelord.com/">Locke Lord LLP</a></li>
-          <li><a href="https://www.mclane.com/">McLane Middleton</a></li>
-          <li><a href="https://www.mass.gov/orgs/merrimac-municipal-light-department">Merrimac Municipal Light Department</a></li>
-          <li><a href="https://www.poweroptions.org/">PowerOptions</a></li>
-          <li><a href="https://www.springfieldjcc.org/">Springfield JCC</a></li>
-          <li><a href="https://www.tbeonline.org/">Temple Beth Elohim, Wellesley (pro bono)</a></li>
-          <li><a href="https://www.terraformglobal.com/">TerraForm Global</a></li>
-          <li><a href="https://www.umassmed.edu/">University of Massachusetts Medical School</a></li>
-          <li><a href="https://www.wm.com/">Waste Management of Massachusetts, Inc.</a></li>
-          <li><a href="https://www.wellesleyma.gov/wellesley-municipal-light-plant">Wellesley Municipal Light
-        </ul>
-    </div>
-  </section>
+            <ul class="client-categories">
+                <li class="client-category right-border">
+                    <h3>Nonprofits</h3>
+                    <ul>
+                        <li>
+                          <a class="client-link"
+                              href="https://www.tbeonline.org/">
 
-  <section id="testimonials" class="section">
-    <div class="container">
-      <h2 class="section-title">Testimonials</h2>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="testimonial">
-            <p>"I cannot recommend LSO Energy Advisors enough. Laura's expertise in the energy field is unparalleled and her guidance has been invaluable."</p>
-            <cite>- John Smith, CEO of Brightfields Development, LLC</cite>
-          </div>
+                            <div class="client-logo">
+                              <img src="./clients/temple.png" alt="Temple Beth Elohim, Wellesley (pro bono)"/>
+                            </div>
+
+                          </a>
+                        </li>
+                      <li>
+                        <a class="client-link" href="https://www.springfieldjcc.org/">
+                                <div class="client-logo">
+                                  <img src="./clients/springfield.jpg" alt="Springfield JCC"/>
+                                </div>
+                          </a> 
+                      </li>
+                    </ul>
+                </li>
+              <li class="client-category">
+                    <h3>Law Firms</h3>
+              </li>
+              <li class="client-category right-border left-border">
+                    <h3>Municipal</h3>
+                    <ul>
+                      <li>
+                          <a class="client-link" href="https://www.umassmed.edu/">
+                                <div class="client-logo">
+                                  <img src="./clients/mass.svg" alt="University of Massachusetts Medical School"/>
+                                </div>
+                          </a> 
+                      </li>
+
+                      <li>
+                          <a class="client-link" href="https://www.wm.com/us/en/location/ma/boston">
+                                <div class="client-logo">
+                                  <img src="./clients/wn.svg" alt="Waste Management of Massachusetts"/>
+                                </div>
+                          </a> 
+                      </li>
+
+                      <li>
+                          <a class="client-link" href="https://www.wellesleyma.gov/wellesley-municipal-light-plant">
+                                <div class="client-logo">
+                                  <img src="./clients/wesley.png" alt="Wellesley Municipal Light"/>
+                                </div>
+                          </a> 
+                      </li>
+                      <li>
+                        <a class="client-link" href="https://merrimaclight.com/">
+                                <div class="client-logo">
+                                  <img src="./clients/merrimac.png"
+                                  alt="Merrimac Municipal Light Department"/>
+                                </div>
+                          </a> 
+                      </li>
+                  </ul>
+
+              </li>
+              <li class="client-category right-border">
+                    <h3>Corporate Energy</h3>
+                    <ul>
+
+                      <li>
+                          <a class="client-link" href="https://www.poweroptions.org/">
+                                <div class="client-logo">
+                                  <img src="./clients/power-options.svg" alt="PowerOptions"/>
+                                </div>
+                          </a> 
+                      </li>
+                        
+                      <li>
+                          <a class="client-link" href="https://www.terraformglobal.com/">
+                                <div class="client-logo">
+                                  <img src="./clients/terraform.png"
+                                  alt="TerraForm Global"/>
+                                </div>
+                          </a> 
+                      </li>
+                  </ul>
+              </li>
+              <li class="client-category">
+                  <h3>Real Estate</h3>
+                  <ul>
+
+                      <li>
+                        <a class="client-link" href="http://www.brightfieldsinc.com/">
+                                <div class="client-logo">
+                                  <img src="./clients/bright-fields.png"
+                                  alt="Brightfields Development, LLC"/>
+                                </div>
+                          </a> 
+                      </li>
+                  </ul>
+
+              </li>
+            </ul>
+            <ul >
+
         </div>
-        <div class="col-sm-6">
-          <div class="testimonial">
-            <p>"LSO Energy Advisors has been an incredible asset to our organization. Their legal guidance has helped us make informed decisions on our energy usage."</p>
-            <cite>- Jane Doe, Head of School at Eaglebrook School</cite>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="testimonial">
-            <p>"Laura and her team have been invaluable in navigating complex energy regulations. Their expertise and guidance have been instrumental in our company's success."</p>
-            <cite>- Bob Johnson, General Counsel at McLane Middleton</cite>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="testimonial">
-            <p>"We've been working with LSO Energy Advisors for years and they have consistently provided top-notch legal guidance on all our energy matters. Highly recommend!"</p>
-            <cite>- Sarah Jones, Director at Waste Management of Massachusetts, Inc.</cite>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>For more information or to schedule a consultation, please fill out the form below or contact us directly:</p>
-    <ul>
-      <li>Email: laura@LSOEnergyAdvisors.com</li>
-      <li>Phone: 781-856-9374</li>
-    </ul>
-    <form action="submit-form.php" method="post">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
-      </div>
-      <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-  </section>  
+      </section>
+
   </main>
+    <footer class="footer">
+      <div class="container">
+            <div class="info">
+                  <p><a href="mailto:laura@LSOEnergyAdvisors.com">laura@LSOEnergyAdvisors.com</a></p>
+            </div>
+            <div class="info">
+              <p><a href="tel:+7818569374">781-856-9374</a></p>
+            </div>
+            <div class="social-media">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+      </div>
+    </footer>  
+
+
+
+<script>
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    observer: true,
+    observerParents: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 8000,
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+    }
+  });
+
+    window.onload = function() {
+        var energyWork = document.getElementById("energy-work");
+        var regWork = document.getElementById("reg-work");
+        var stratWork = document.getElementById("strat-work");
+        var climateWork = document.getElementById("climate-work");
+        var output = document.getElementById("type-of-work-info-text");
+
+        var energyText = "Draft, review and negotiate: purchase power agreements for both suppliers and purchasers of electricity and natural gas, renewable energy net metering credit agreements on behalf of host customers and off-takers, tariff-related and other transactional documents";
+
+        var regText = "Extensive administrative law experience in Massachusetts, Rhode Island and New Hampshire. Advise and counsel clients regarding state and federal regulatory proceedings. Litigate rate and regulatory matters before public utility commissions and other state agencies.";
+
+        var stratText = "Negotiate and drive agreements and settlements for clients. For example, settled a multi-million dollar dispute with an electric utility on behalf of a large nonprofit customer regarding second feeder service and interconnection issues. Continually negotiate with electricity, natural gas and solar providers on behalf of PowerOptions’ nonprofit and public entity members. Work closely with clients to design and achieve their goals. Assisted PowerOptions in creating and establishing a Small Systems Solar Program including the RFP process, vendor selection, and contract negotiation. Worked with Town of Wellesley to design a highly successful residential rooftop PV program.";
+
+        var climateText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+        var selectedLi = energyWork;
+        energyWork.classList.add("selected");
+        output.innerText = energyText;
+
+        energyWork.onclick = function() {
+          if (selectedLi) {
+            selectedLi.classList.remove("selected");
+          }
+          output.innerText = energyText;
+          energyWork.classList.add("selected");
+          selectedLi = energyWork;
+        }
+
+        regWork.onclick = function() {
+          if (selectedLi) {
+            selectedLi.classList.remove("selected");
+          }
+          output.innerText = regText;
+          regWork.classList.add("selected");
+          selectedLi = regWork;
+        }
+
+        stratWork.onclick = function() {
+          if (selectedLi) {
+            selectedLi.classList.remove("selected");
+          }
+          output.innerText = stratText;
+          stratWork.classList.add("selected");
+          selectedLi = stratWork;
+        }
+
+        climateWork.onclick = function() {
+          if (selectedLi) {
+            selectedLi.classList.remove("selected");
+          }
+          output.innerText = climateText;
+          climateWork.classList.add("selected");
+          selectedLi = climateWork;
+        }
+      }
+</script>
   </body>
 </html>
     
