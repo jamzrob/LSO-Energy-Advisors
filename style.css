@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-  color: #008080;
+  color: #3c5f90;
   text-decoration: none;
 }
 
@@ -155,7 +155,7 @@ hr.white {
 }
 
 #types-of-work {
-  background-color: #008080;
+  background-color: #3c5f90;
   color: white;
   padding: 40px;
 }
@@ -210,35 +210,35 @@ hr.white {
 
 
 .types-of-work-logo.selected {
-    border: 2px solid #008080;
-    color: #008080;
+    border: 2px solid #3c5f90;
+    color: #3c5f90;
 }
 
 .type {
   border-radius: 25px;
-  border: 2px solid #008080;
+  border: 2px solid #3c5f90;
 }
 
 .type.selected {
     background-color: white;
-    color: #008080;
+    color: #3c5f90;
 }
 
 .type.selected .types-of-work-logo {
-    border: 2px solid #008080;
+    border: 2px solid #3c5f90;
     background-color: white;
-    color: #008080;
+    color: #3c5f90;
 }
 
 .type:hover {
     background-color: white;
-    color: #008080;
+    color: #3c5f90;
 }
 
 .type:hover .types-of-work-logo {
-    border: 2px solid #008080;
+    border: 2px solid #3c5f90;
     background-color: white;
-    color: #008080;
+    color: #3c5f90;
 }
 
 .type-of-work-info {
@@ -248,7 +248,7 @@ hr.white {
 }
 
 #type-of-work-info-text {
-    color: #008080;
+    color: #3c5f90;
     padding: 30px;
     padding-left: 20px;
     padding-left: 30px;
@@ -277,7 +277,7 @@ hr.white {
 
 /* Testimonials section */
 hr.green {
-    border-top: 2px solid #008080;
+    border-top: 2px solid #3c5f90;
     width: 100vw;
     position: relative;
     margin-left: -50vw;
@@ -293,12 +293,12 @@ hr.green {
 #testimonials h2 {
     font-size:32px;
     margin-bottom: 10px;
-    color: #008080;
+    color: #3c5f90;
 }
 .testimonial h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #008080;
+    color: #3c5f90;
 }
 #testimonials {
   padding: 40px 0;
@@ -356,7 +356,7 @@ hr.green {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: #008080;
+  color: #3c5f90;
   font-size: 25px;
   font-weight: 700;
   position: absolute;
@@ -382,7 +382,7 @@ hr.green {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #008080 !important;
+  background-color: #3c5f90 !important;
 }
 
 .swiper-slide { width: 80% }
@@ -475,7 +475,7 @@ hr.blue {
 
 
 .client-category ul li {
-    color: #008080;
+    color: #3c5f90;
 }
  
 .client-category h3 {
@@ -518,7 +518,7 @@ hr.blue {
 
 /* Footer Style Section */
 .footer {
-  background-color: #008080;
+  background-color: #3c5f90;
   font-size: 20px;
   color: white;
 }
