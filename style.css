@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Helvetica;
 }
 
 a {
@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-  color: #3c5f90;
+  color: #4a678f;
   text-decoration: none;
 }
 
@@ -24,7 +24,7 @@ a:hover {
 }
 
 p {
-    color: #3E3E63;
+    color: #4a678f;
 }
 
 /* Header Styles */
@@ -112,7 +112,7 @@ nav li:last-child {
   font-weight: bold;
   font-size: 2rem;
   text-align: left;
-  font-family: verdana;
+  font-family: Helvetica;
   color: white;
   padding: 20px;
   font-style: italic;
@@ -139,9 +139,9 @@ header {
 
 }
 #about p {
-  font-family: verdana;
+  font-family: Helvetica;
   font-size: 1.4rem;
-  color:#3E3E63;
+  color:#4a678f;
 }
 
 /* Types of Work Section Styles */
@@ -155,7 +155,7 @@ hr.white {
 }
 
 #types-of-work {
-  background-color: #3c5f90;
+  background-color: #4a678f;
   color: white;
   padding: 40px;
 }
@@ -164,6 +164,7 @@ hr.white {
   margin-top: 0;
   font-size: 32px;
   text-align: right;
+  font-weight: bold;
 }
 
 #types-of-work h3 {
@@ -210,35 +211,35 @@ hr.white {
 
 
 .types-of-work-logo.selected {
-    border: 2px solid #3c5f90;
-    color: #3c5f90;
+    border: 2px solid #4a678f;
+    color: #4a678f;
 }
 
 .type {
   border-radius: 25px;
-  border: 2px solid #3c5f90;
+  border: 2px solid #4a678f;
 }
 
 .type.selected {
     background-color: white;
-    color: #3c5f90;
+    color: #4a678f;
 }
 
 .type.selected .types-of-work-logo {
-    border: 2px solid #3c5f90;
+    border: 2px solid #4a678f;
     background-color: white;
-    color: #3c5f90;
+    color: #4a678f;
 }
 
 .type:hover {
     background-color: white;
-    color: #3c5f90;
+    color: #4a678f;
 }
 
 .type:hover .types-of-work-logo {
-    border: 2px solid #3c5f90;
+    border: 2px solid #4a678f;
     background-color: white;
-    color: #3c5f90;
+    color: #4a678f;
 }
 
 .type-of-work-info {
@@ -248,7 +249,7 @@ hr.white {
 }
 
 #type-of-work-info-text {
-    color: #3c5f90;
+    color: #4a678f;
     padding: 30px;
     padding-left: 20px;
     padding-left: 30px;
@@ -277,7 +278,7 @@ hr.white {
 
 /* Testimonials section */
 hr.green {
-    border-top: 2px solid #3c5f90;
+    border-top: 2px solid #4a678f;
     width: 100vw;
     position: relative;
     margin-left: -50vw;
@@ -287,18 +288,19 @@ hr.green {
     font-size: 1.2rem;
     font-style: italic;
     margin-bottom: 20px;
-    color: #3E3E63;
+    color: #4a678f;
 }
 
 #testimonials h2 {
     font-size:32px;
     margin-bottom: 10px;
-    color: #3c5f90;
+    color: #4a678f;
+    font-weight: bold;
 }
 .testimonial h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #3c5f90;
+    color: #4a678f;
 }
 #testimonials {
   padding: 40px 0;
@@ -356,7 +358,7 @@ hr.green {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: #3c5f90;
+  color: #4a678f;
   font-size: 25px;
   font-weight: 700;
   position: absolute;
@@ -382,14 +384,14 @@ hr.green {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #3c5f90 !important;
+  background-color: #4a678f !important;
 }
 
 .swiper-slide { width: 80% }
 
 /* Clients Section Styles */
 hr.blue {
-    border-top: 2px solid #3E3E63;
+    border-top: 2px solid #4a678f;
     width: 100vw;
     position: relative;
     margin-left: -50vw;
@@ -405,7 +407,9 @@ hr.blue {
   margin-top: 0;
   text-align: center;
   font-size: 32px;
-  color: #3E3E63;
+  color: #4a678f;
+
+    font-weight: bold;
 }
 
 
@@ -460,12 +464,12 @@ hr.blue {
 }
 
 .client-category.left-border {
-    border-left: 2px solid #3E3E63;
+    border-left: 2px solid #4a678f;
 
 }
 
 .client-category.right-border {
-    border-right: 2px solid #3E3E63;
+    border-right: 2px solid #4a678f;
 }
 
 .client-category ul {
@@ -475,13 +479,13 @@ hr.blue {
 
 
 .client-category ul li {
-    color: #3c5f90;
+    color: #4a678f;
 }
  
 .client-category h3 {
-    color:#3E3E63;
+    color:#4a678f;
   font-size: 24px;
-  border-bottom: 2px solid #3E3E63;
+  border-bottom: 2px solid #4a678f;
 }
 
 @media (max-width: 768px) {
@@ -518,7 +522,7 @@ hr.blue {
 
 /* Footer Style Section */
 .footer {
-  background-color: #3c5f90;
+  background-color: #4a678f;
   font-size: 20px;
   color: white;
 }
