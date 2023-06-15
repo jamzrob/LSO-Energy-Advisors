@@ -35,7 +35,11 @@ header {
 header h1 {
     margin: 0;
     font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 header p {
     margin: 0;
@@ -43,12 +47,10 @@ header p {
 }
 
 /* Navigation Styles */
-
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     margin: 0;
 }
 
@@ -56,7 +58,6 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
-    display: inline-block;
     margin-right: 30px;
 }
 
@@ -73,7 +74,8 @@ nav li:last-child {
     nav li {
         width: 100%;
         margin: 0.5rem 0;
-        height: auto; /* reset height */
+        height: auto;
+        /* reset height */
         border-bottom: 1px solid #f2f2f2;
     }
 }
@@ -82,11 +84,13 @@ nav li:last-child {
     font-family: Impact, "Helvetica Inserat", "Bitstream Vera Sans Bold",
         "Arial Black", "sans serif";
     font-size: 19px;
-    margin-left: 80px;
-    width: 50%;
+    margin-left: 20px;
+    margin-right: auto;
     padding: 10px;
     font-weight: bold;
+    max-width: 300px;
 }
+
 .nav-logo img {
     max-width: 100%;
     max-height: 100%;
@@ -103,8 +107,7 @@ nav li:last-child {
     position: relative;
 }
 
-.banner-container {
-}
+.banner-container {}
 
 .mission {
     width: 50%;
@@ -136,6 +139,7 @@ header {
     height: 100%;
     padding: 40px;
 }
+
 #about p {
     font-family: Helvetica;
     font-size: 1.4rem;
@@ -267,7 +271,8 @@ hr.white {
     #types-of-work li {
         width: 100%;
         margin: 0.5rem 0;
-        height: auto; /* reset height */
+        height: auto;
+        /* reset height */
     }
 }
 
@@ -279,11 +284,13 @@ hr.green {
     margin-left: -50vw;
     left: 50%;
 }
+
 .testimonial p {
     font-size: 1.2rem;
     font-style: italic;
     margin-bottom: 20px;
     color: #4a678f;
+    text-align: left;
 }
 
 #testimonials h2 {
@@ -292,16 +299,24 @@ hr.green {
     color: #4a678f;
     font-weight: bold;
 }
+
 .testimonial h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #4a678f;
+
+    font-family: "cursive", "sans serif";
 }
+
 #testimonials {
-    padding: 40px 0;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 1600px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+
 }
+
 .testimonial-box {
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -309,40 +324,59 @@ hr.green {
     margin-bottom: 30px;
     padding: 30px;
 }
+
 .testimonial {
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
+
 .testimonial-text {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    align-items: left;
 }
+
 .testimonial-text p {
     word-wrap: break-word;
     white-space: pre-wrap;
+    color: black;
 }
+
 .testimonial-author {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    margin-bottom: 30px;
 }
+
 .testimonial-author h3 {
     margin-bottom: 5px;
 }
+
 .testimonial-author span {
-    font-style: normal;
+    font-family: "Gill Sans", "serif";
+    font-size: 20px;
+}
+
+
+.testimonial-author a {
+
+    text-decoration: underline;
+    color: #4a678f;
 }
 
 .swiper {
     width: 100%;
     height: 100%;
 }
+
 .swiper-wrapper {
     max-height: 100%;
     max-width: 100%;
     height: 100%;
     display: flex;
 }
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -423,6 +457,8 @@ hr.blue {
 }
 
 .client-link {
+
+    align-items: center;
     text-decoration: none;
     font-size: 20px;
     color: black;
@@ -452,30 +488,26 @@ hr.blue {
     border-bottom: 2px solid #4a678f;
 }
 
-@media (max-width: 768px) {
-    .client-categories {
-        flex-direction: column;
+@media (max-width: 1010px) {
+    .col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: auto;
     }
 
-    .client-category {
-        width: 100%;
-        margin: 0.5rem 0;
-        height: auto; /* reset height */
-    }
-
-    .client-category.left-border {
-        border-left: none;
-    }
-
-    .client-category.right-border {
-        border-right: none;
-    }
 }
 
 .client-logo {
     margin-top: 20px;
     width: 200px;
 }
+
+.client-row {
+    display: flex;
+    align-items: center;
+}
+
 .client-logo img {
     max-width: 100%;
     max-height: 100%;
@@ -484,16 +516,12 @@ hr.blue {
 }
 
 .client-logos {
-    display: flex;
-    align-items: center;
-    width: 100%;
+
+
+    padding: 20px;
+    max-width: 1200px;
 }
 
-.client-logos .client-link {
-    flex: 1;
-    max-width: 100%;
-    display: inline-block;
-}
 
 .client-logos .temple {
     width: 200px;
